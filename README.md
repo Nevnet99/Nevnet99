@@ -1,5 +1,5 @@
 <h1 align="center">Luke Brannagan</h1>
-<h2 align="center">Javascript Developer</h2>
+<p align="center"><b>Javascript Developer</b></p>
 
 <div align="center">
    I'm a software engineer based in Manchester with 3+ years of experience with JavaScript and Frontend Development tools. With a focus on code quality as well      as teaching others, mainly working with React for the frontend and Express for anything node related. I am also a keen advocate for TDD and have experience      with Jest and more recently React Testing Library.
@@ -21,17 +21,6 @@
   </h3>
 </div>
 
-<!--
-**Nevnet99/Nevnet99** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p align="center" color="red">
+NOTE: you may notice my github looking a bit empty 👀. I've recently cleaned up and deleted a lot of the old repos that I used to work on, im currently building a portfolio to better host my work as well as my blog (programming related). If you're interested in my code style take a look at the code in my portfolio repo https://github.com/Nevnet99/Portfolio, more will be coming soon!
+</p>
