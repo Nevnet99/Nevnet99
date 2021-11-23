@@ -60,6 +60,9 @@ NOTE: you may notice my github looking a bit empty 👀. I've recently cleaned u
 <p align="center">
  <img src="https://github-readme-stats.vercel.app/api?username=Nevnet99&show_icons=true&theme=gotham" alt="Nevnet99 github stats" />
 </p>
+<p align="center">
+ <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nevnet99&show_icons=true&theme=gotham" />   
+</p>
 
 
 
