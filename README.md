@@ -33,9 +33,9 @@ NOTE: you may notice my github looking a bit empty 👀. I've recently cleaned u
    <img src="https://img.shields.io/static/v1?label=&message=Javascript&color=yellow" />
    <img src="https://img.shields.io/static/v1?label=&message=Typescript&color=blue" />
    <img src="https://img.shields.io/static/v1?label=&message=Storybook&color=pink" />
+   <img src="https://img.shields.io/static/v1?label=&message=Next.js&color=black" />
+   <img src="https://img.shields.io/static/v1?label=&message=Jest&color=purple" />
 </div>
 
-<h2>Github Statistics</h2>
-![Nevnet's GitHub stats](https://github-readme-stats.vercel.app/api?username=Nevnet99&show_icons=true&theme=radical)
 
 
