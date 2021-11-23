@@ -1,5 +1,4 @@
-<h1 align="center">Luke Brannagan</h1>
-<p align="center"><b>Javascript Developer</b></p>
+![Luke Brannagan Banner](https://user-images.githubusercontent.com/28801236/142974344-0550850c-f6e9-4b17-bd22-ec9f266bd81b.jpg)
 
 <div align="center">
    I'm a software engineer based in Manchester with 3+ years of experience with JavaScript and Frontend Development tools. With a focus on code quality as well      as teaching others, mainly working with React for the frontend and Express for anything node related. I am also a keen advocate for TDD and have experience      with Jest and more recently React Testing Library.
