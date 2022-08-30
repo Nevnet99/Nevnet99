@@ -1,4 +1,5 @@
-![banner (1)](https://user-images.githubusercontent.com/28801236/142974570-40100f90-5565-4f20-8c0c-8b178eb8361f.png)
+![codecult background](https://user-images.githubusercontent.com/28801236/187346119-4a14d370-f722-4b9b-bc79-978c3a754535.png)
+
 
 <div align="center">
    I'm a software engineer based in Manchester with 3+ years of experience with JavaScript and Frontend Development tools. With a focus on code quality as well      as teaching others, mainly working with React for the frontend and Express for anything node related. I am also a keen advocate for TDD and have experience      with Jest and more recently React Testing Library.
