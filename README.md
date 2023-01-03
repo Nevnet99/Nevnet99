@@ -2,8 +2,24 @@
 
 
 <div align="center">
-   I'm a software engineer based in Manchester with 4+ years of experience with JavaScript and Frontend Development tools. With a focus on code quality as well      as teaching others, mainly working with React for the frontend and Express for anything node related. I am also a keen advocate for TDD and have experience      with Jest and more recently React Testing Library.
+Welcome to my GitHub account! My name is Luke and I am a web developer with a passion for building modern and user-friendly web applications.
+
+On this account, you will find a variety of projects that I have worked on throughout my career. These projects range from personal side projects to professional client work, and showcase my skills in technologies such as the MERN stack (MongoDB, Express, React, and Node.js) and others.
+
+I am always looking for new opportunities to learn and grow as a developer, so please feel free to connect with me on GitHub or check out my portfolio at www.thecodecult.com.
+
+Thank you for visiting!
 </div>
+
+## Recent Projects
+- Project 1: Coming soon...
+- Project 2:  Coming soon...
+- Project 3: Coming soon...
+## Skills
+Proficient in the MERN stack and modern web development technologies.
+Strong understanding of test-driven development (TDD) and accessibility principles.
+Experience working on a variety of projects, from small business websites to large-scale e-commerce platforms.
+Excellent communication skills and ability to work effectively in team environments.
 
 &nbsp;
 
@@ -29,12 +45,6 @@
      </a>
    </span>
 </div>
-
-&nbsp;
-
-<p align="center" color="red">
-NOTE: you may notice my github looking a bit empty 👀. I've recently cleaned up and deleted a lot of the old repos that I used to work on, im currently building a portfolio to better host my work as well as my blog (programming related). If you're interested in my code style take a look at the code in my portfolio repo https://github.com/Nevnet99/Portfolio, more will be coming soon!
-</p>
 
 &nbsp;
 
