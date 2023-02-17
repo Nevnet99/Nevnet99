@@ -13,7 +13,7 @@ Thank you for visiting!
 
 ## Recent Projects
 - Project 1: [wysiwyg editor](https://github.com/Nevnet99/React-WYSIWYG) (built from scratch using react drag and drop) 
-- Project 2: [nextjs-boiler-plate](https://github.com/Nevnet99/luke-boilerplate-next) (my typical way of working an opinioned boilerplate using NextJs)
+- Project 2: [nextjs-boilerplate-styledcomponents](https://github.com/Nevnet99/luke-boilerplate-next), [nextjs-boilerplate-with-stiches](https://github.com/Nevnet99/luke-boilerplate-next-stitches) (my typical way of working an opinioned boilerplate using NextJs)
 - Project 3: Coming soon...
 ## Skills
 Proficient in the MERN stack and modern web development technologies.
