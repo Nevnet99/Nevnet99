@@ -14,7 +14,7 @@ Thank you for visiting!
 ## Recent Projects
 - Project 1: [wysiwyg editor](https://github.com/Nevnet99/React-WYSIWYG) (built from scratch using react drag and drop) 
 - Project 2: [nextjs-boilerplate-styledcomponents](https://github.com/Nevnet99/luke-boilerplate-next), [nextjs-boilerplate-with-stiches](https://github.com/Nevnet99/luke-boilerplate-next-stitches) (my typical way of working an opinioned boilerplate using NextJs)
-- Project 3: Coming soon...
+- Project 3: [todo-app](https://github.com/Nevnet99/mw-techtest)
 ## Skills
 Proficient in the MERN stack and modern web development technologies.
 Strong understanding of test-driven development (TDD) and accessibility principles.
