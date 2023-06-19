@@ -1,4 +1,4 @@
-![codecult background](https://user-images.githubusercontent.com/28801236/187346119-4a14d370-f722-4b9b-bc79-978c3a754535.png)
+
 
 
 <div align="center">
