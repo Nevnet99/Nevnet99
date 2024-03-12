@@ -8,5 +8,8 @@
 
 <p>
   Working as a Frontend engineer for the past 6+ years in a variety of roles now branching out learning lots of new skills to become an indie hacker!
-  Currently I’m focused on building out a design system and everything web at Kroo. 
+</p>
+
+<p>
+    Currently I’m focused on building out a design system and everything web at Kroo. 
 </p>
