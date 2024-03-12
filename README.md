@@ -3,7 +3,7 @@
 <br />
 <br />
 
-<h1 align="center">Hey, I’m Luke I’m a JavaScript developer working remotely from Manchester, UK </h1>
+<h1 align="center">Hey, I’m Luke I’m a JavaScript developer working remotely from Manchester, UK.</h1>
 
 
 <p>
