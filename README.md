@@ -3,13 +3,8 @@
 <br />
 <br />
 
-<h1 align="center">Hey, I’m Luke I’m a JavaScript developer working remotely from Manchester, UK.</h1>
+<h1 align="center">Hey, I’m Luke I’m a Developer working remotely from Manchester, UK.</h1>
 
+<p>Mostly working as a Frontend Engineer with React and Typescript over the past 6+ years.</p>
 
-<p>
-  Working as a Frontend engineer for the past 6+ years in a variety of roles now branching out learning lots of new skills to become an indie hacker!
-</p>
-
-<p>
-    Currently I’m focused on building out a design system and everything web at Kroo. 
-</p>
+<p>Currently learning Rust, Go and Python to become a Fullstack baddie.</p>
