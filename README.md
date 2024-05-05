@@ -7,4 +7,4 @@
 
 <p>Mostly working as a Frontend Engineer with React and Typescript over the past 6+ years.</p>
 
-<p>Currently learning Rust, Go and Python to become a Fullstack baddie.</p>
+<p>Currently learning Rust, Go and Python to become a Fullstack baddie and increase my knowledge of programming as a whole.</p>
