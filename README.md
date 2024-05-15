@@ -18,10 +18,7 @@
 
 <h3>Programming Stats:</h3>
 
-<p>Working in various environments including <b>Product</b>, <b>Start-up</b> and <b>Agency</b>. 
-Mostly as a Frontend engineer working with <b>React</b> and <b>Typescript</b>
-Although I have other skills!
-</p>
+<p>Working in various environments including <b>Product</b>, <b>Start-up</b> and <b>Agency</b> I've gathered some skills:</p>
 
 ```javascript
 const nevnet99 = {
