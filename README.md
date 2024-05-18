@@ -15,7 +15,7 @@
 </li>
 
 <li>
-  <p>Looking for my blog 👀 `ssh lukebrannagan.com` 🤫 (WIP ⚠️)</p>
+  <p>Looking for my blog 👀 <code>ssh lukebrannagan.com</code> 🤫 (WIP ⚠️)</p>
 </li>
 
 </ul>
