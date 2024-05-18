@@ -14,7 +14,13 @@
     <p><em><a href="https://www.linkedin.com/in/luke-brannagan" target="__blank">Linkedin</a></em></p> 
 </li>
 
+<li>
+  <p>Looking for my blog 👀 `ssh lukebrannagan.com` 🤫 (WIP ⚠️)</p>
+</li>
+
 </ul>
+
+
 
 <h3>Programming Stats:</h3>
 
