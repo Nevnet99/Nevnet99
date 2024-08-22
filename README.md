@@ -30,7 +30,6 @@
 const nevnet99 = {
   name: "Luke",
   tech: {
-    langs: ["Typescript"],
     learning: ["Rust", "Go", "Python", "AWS"],
     currentSpecialties: [
       "React",
@@ -41,17 +40,13 @@ const nevnet99 = {
     ],
     dbs: ["Postgres (via Supabase)", "MongoDB", "SQL"],
     tools: [
-      "VSCode",
+      "nvim",
       "Figma",
       "Docker",
       "Git",
-      "Github",
       "Storybook",
-      "Jest",
-      "Cypress",
-      "React Testing Library",
-      "Styled Components",
-      "Tailwind CSS",
+      "All the testing (Jest/Vitest, Cypress/Playwright, React Testing Library)"
+      "All the CSS flavours (CSS-in-JS, Tailwind, Classic, Modules)",
     ],
     ci: ["Github Actions", "Husky"],
     cd: ["Vercel"]
