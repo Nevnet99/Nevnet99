@@ -14,10 +14,6 @@
     <p><em><a href="https://www.linkedin.com/in/luke-brannagan" target="__blank">Linkedin</a></em></p> 
 </li>
 
-<li>
-  <p>Looking for my blog 👀 <code>ssh lukebrannagan.com</code> 🤫 (WIP ⚠️)</p>
-</li>
-
 </ul>
 
 
@@ -37,6 +33,7 @@ const nevnet99 = {
       "Accessibility",
       "Design Systems",
       "Web",
+      "Frontend Development"
     ],
     dbs: ["Postgres (via Supabase)", "MongoDB", "SQL"],
     tools: [
