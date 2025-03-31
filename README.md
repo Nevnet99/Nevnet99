@@ -66,8 +66,6 @@ const nevnet99 = {
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3BjaWE2MnozbW1nYzA4ZDAzdTZtbnpwbmNldHhuMmNlanNybTdrbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/IvKoEtvvzMfMRP3Eqc/giphy.gif" width="60" />
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3BjaWE2MnozbW1nYzA4ZDAzdTZtbnpwbmNldHhuMmNlanNybTdrbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/IvKoEtvvzMfMRP3Eqc/giphy.gif" width="60" />
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3BjaWE2MnozbW1nYzA4ZDAzdTZtbnpwbmNldHhuMmNlanNybTdrbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/IvKoEtvvzMfMRP3Eqc/giphy.gif" width="60" />
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3BjaWE2MnozbW1nYzA4ZDAzdTZtbnpwbmNldHhuMmNlanNybTdrbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/IvKoEtvvzMfMRP3Eqc/giphy.gif" width="60" />
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3BjaWE2MnozbW1nYzA4ZDAzdTZtbnpwbmNldHhuMmNlanNybTdrbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/IvKoEtvvzMfMRP3Eqc/giphy.gif" width="60" />
 </div>
 
 
