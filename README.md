@@ -8,7 +8,7 @@
   <p><em>Web Platform Engineer at <a href="https://www.kroo.com/" target="__blank">Kroo</a></em>.</p>
 </li>
 <li>
-  <p><em><a href="https://www.lukebrannagan.com" target="__blank">Website</a></em></p>  
+  <p><em><a href="https://www.lukebrannagan.com" target="_blank">Website</a></em></p>  
 </li>
 <li>
     <p><em><a href="https://www.linkedin.com/in/luke-brannagan" target="__blank">Linkedin</a></em></p> 
@@ -17,7 +17,7 @@
 </ul>
 
 <h2>Currently Working on</h2>
-<a href="www.backpackcli.com">Backpack</a>
+<a href="https://www.backpackcli.com" target="_blank">Backpack</a>
 
 
 
