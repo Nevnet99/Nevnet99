@@ -1,7 +1,7 @@
 
 
 
-<h2>Hey, I'm Luke 👋</h2>
+<h1>Hey, I'm Luke 👋</h1>
 <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWQ1Zm1jd3dyamdmMW4ydXQzbDk1c2o5dWk0cThlbXlxZ3JjaTZlOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/1YcLOSW6JCNdsfSr5E/giphy.gif" width="200" align="right" />
 <ul>
 <li>
@@ -16,9 +16,12 @@
 
 </ul>
 
+<h2>Currently Working on</h2>
+<a href="www.backpackcli.com">Backpack</a>
 
 
-<h3>Programming Stats:</h3>
+
+<h2>Programming Stats:</h2>
 
 <p>Working in various environments including <b>Product</b>, <b>Start-up</b> and <b>Agency</b> I've gathered some skills:</p>
 
