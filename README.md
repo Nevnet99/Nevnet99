@@ -66,8 +66,6 @@ I'm a **Senior Frontend Engineer** architecting scalable, accessible, and test-d
 
 # 🔑 Key Project
 
-This is where I apply my architectural principles.
-
 <a href="https://github.com/Nevnet99/specsync">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nevnet99&repo=specsync&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark" alt="Spec Sync Project Card" />
 </a>
