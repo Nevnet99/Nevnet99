@@ -76,7 +76,7 @@ This is where I apply my architectural principles.
 
 # 📊 My GitHub Stats
 
-<p align="center">
+<p>
   <a href="https://github.com/Nevnet99">
     <img align="center" width="400" src="https://github-readme-stats.vercel.app/api?username=Nevnet99&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark" alt="Luke's GitHub Stats" />
   </a>
