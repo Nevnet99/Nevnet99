@@ -18,7 +18,6 @@ I'm a **Senior Frontend Engineer** architecting scalable, accessible, and test-d
 * 🎨 **Design Systems:** Leading the build of scalable, accessible (**WCAG**) component libraries.
 * ⚡ **Performance:** Modernizing frontends (**Vite**, **Tanstack Query**) and optimizing core web vitals.
 * 🏛️ **Test-Driven Development:** Championing a TDD approach for robust, maintainable code.
-* ☁️ **Modern Tooling:** Defining infrastructure as code (**Docker**, **Terraform**) for reproducible builds.
 
 ---
 
@@ -54,7 +53,6 @@ I'm a **Senior Frontend Engineer** architecting scalable, accessible, and test-d
 <br>
 <br>
 <img src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
-<img src="https://img.shields.io/badge/-Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform">
 <img src="https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900" alt="AWS">
 <img src="https://img.shields.io/badge/-TanStack_Query-FF4154?style=flat-square&logo=tanstack&logoColor=white" alt="TanStack Query">
 <img src="https://img.shields.io/badge/-Zod-3068b2?style=flat-square" alt="Zod">
