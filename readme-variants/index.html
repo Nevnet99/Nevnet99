@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profile README variants — Voice</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      body {
+        margin: 0;
+        background: #0d1117;
+        color: #e6edf3;
+        font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+          Arial, sans-serif;
+      }
+      .variant-page {
+        container: variant-page / inline-size;
+        margin-inline: calc(50% - 50vw);
+        padding: 24px;
+      }
+      .variant-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 760px;
+        margin-inline: auto;
+      }
+      .variant-picker {
+        all: unset;
+        display: none;
+        flex-direction: column;
+        gap: 16px;
+        max-height: calc(100dvh - 48px);
+        overflow-y: auto;
+        scrollbar-width: none;
+        padding: 6px;
+        border-radius: 14px;
+        background: rgb(20 20 20 / 0.92);
+        box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.1);
+        font: 13px/1 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        user-select: none;
+      }
+      .variant-picker-group {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+      .variant-picker-heading {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 10px 6px;
+        font-size: 11px;
+        font-weight: 500;
+        color: rgb(255 255 255 / 0.45);
+      }
+      .variant-picker button {
+        all: unset;
+        flex: none;
+        padding: 8px 10px;
+        border-radius: 8px;
+        font: inherit;
+        color: rgb(255 255 255 / 0.6);
+        cursor: pointer;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        transition: color 200ms ease-out, font-weight 200ms ease-out;
+      }
+      .variant-picker button:hover {
+        color: rgb(255 255 255 / 0.85);
+      }
+      .variant-picker button[aria-pressed="true"] {
+        background: rgb(255 255 255 / 0.14);
+        color: rgb(255 255 255);
+        font-weight: 500;
+      }
+      .variant-picker button:focus-visible {
+        outline: 2px solid rgb(255 255 255 / 0.7);
+        outline-offset: 2px;
+      }
+      .variant-picker-select {
+        position: relative;
+        align-self: flex-start;
+        max-width: 100%;
+        color: rgb(255 255 255);
+      }
+      .variant-picker-select select {
+        all: unset;
+        box-sizing: border-box;
+        max-width: 100%;
+        padding: 10px 36px 10px 16px;
+        border-radius: 999px;
+        background: rgb(20 20 20 / 0.92);
+        box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.1);
+        font: 500 13px/1 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        cursor: pointer;
+      }
+      .variant-picker-select select:focus-visible {
+        outline: 2px solid rgb(255 255 255 / 0.7);
+        outline-offset: 2px;
+      }
+      .variant-picker-select svg {
+        position: absolute;
+        top: 50%;
+        right: 14px;
+        translate: 0 -50%;
+        pointer-events: none;
+        color: rgb(255 255 255 / 0.6);
+      }
+      @container variant-page (min-width: 992px) {
+        .variant-layout {
+          display: grid;
+          grid-template-columns: 208px 760px;
+          justify-content: center;
+          gap: 24px;
+          align-items: start;
+          max-width: none;
+        }
+        .variant-picker {
+          display: flex;
+          position: sticky;
+          top: 24px;
+        }
+        .variant-picker-select {
+          display: none;
+        }
+      }
+      .variant-stage {
+        min-width: 0;
+      }
+      .note {
+        margin: 0 0 16px;
+        padding: 12px 14px;
+        border: 1px solid #30363d;
+        border-radius: 8px;
+        background: #161b22;
+        color: #8b949e;
+        font-size: 13px;
+      }
+      .readme {
+        padding: 24px;
+        border: 1px solid #30363d;
+        border-radius: 8px;
+        background: #0d1117;
+      }
+      .readme h1 {
+        margin: 0 0 12px;
+        font-size: 1.75rem;
+        border-bottom: 1px solid #21262d;
+        padding-bottom: 0.3em;
+      }
+      .readme h2 {
+        margin: 1.4em 0 0.6em;
+        font-size: 1.25rem;
+        border-bottom: 1px solid #21262d;
+        padding-bottom: 0.3em;
+      }
+      .readme p {
+        margin: 0 0 1em;
+      }
+      .readme ul {
+        margin: 0 0 1em;
+        padding-left: 1.4em;
+      }
+      .readme li {
+        margin: 0.25em 0;
+      }
+      .readme a {
+        color: #58a6ff;
+        text-decoration: none;
+      }
+      .readme a:hover {
+        text-decoration: underline;
+      }
+      .readme hr {
+        border: 0;
+        border-top: 1px solid #21262d;
+        margin: 1.2em 0;
+      }
+      .badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 0 0 1em;
+      }
+      .badge {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none !important;
+      }
+      .badge.li {
+        background: #0077b5;
+      }
+      .badge.web {
+        background: #000;
+      }
+      .pins {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+      .pin {
+        display: block;
+        padding: 14px;
+        border: 1px solid #30363d;
+        border-radius: 8px;
+        background: #161b22;
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+      .pin strong {
+        color: #58a6ff;
+        display: block;
+        margin-bottom: 4px;
+      }
+      .pin span {
+        color: #8b949e;
+        font-size: 13px;
+      }
+      .stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin: 0 0 1em;
+      }
+      .chip {
+        font: 500 11px/1.2 ui-monospace, SFMono-Regular, Menlo, Consolas,
+          monospace;
+        padding: 4px 8px;
+        border-radius: 4px;
+        background: #21262d;
+        color: #c9d1d9;
+      }
+      .raw {
+        margin-top: 16px;
+      }
+      .raw summary {
+        cursor: pointer;
+        color: #8b949e;
+        font-size: 13px;
+      }
+      .raw pre {
+        margin: 8px 0 0;
+        padding: 12px;
+        overflow: auto;
+        border-radius: 8px;
+        background: #161b22;
+        border: 1px solid #30363d;
+        font: 12px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        white-space: pre-wrap;
+      }
+      .variant-block[hidden] {
+        display: none !important;
+      }
+      .tradeoffs {
+        margin-top: 24px;
+        overflow: auto;
+      }
+      .tradeoffs table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+      }
+      .tradeoffs th,
+      .tradeoffs td {
+        border: 1px solid #30363d;
+        padding: 8px 10px;
+        text-align: left;
+        vertical-align: top;
+      }
+      .tradeoffs th {
+        background: #161b22;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="variant-page">
+      <div class="variant-layout">
+        <nav class="variant-picker" aria-label="Variants">
+          <div
+            class="variant-picker-group"
+            role="group"
+            aria-labelledby="variants-voice"
+          >
+            <span class="variant-picker-heading" id="variants-voice">
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+                width="12"
+                height="12"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 3v4a3 3 0 0 0 3 3h7" />
+                <path d="m10 7 3 3-3 3" />
+              </svg>
+              Voice
+            </span>
+            <button type="button" data-variant="sparse" aria-pressed="true">
+              Sparse
+            </button>
+            <button type="button" data-variant="straight" aria-pressed="false">
+              Straight
+            </button>
+            <button type="button" data-variant="workshop" aria-pressed="false">
+              Workshop
+            </button>
+            <button type="button" data-variant="proposed" aria-pressed="false">
+              Proposed
+            </button>
+          </div>
+        </nav>
+
+        <div class="variant-picker-select">
+          <select aria-label="Variant">
+            <optgroup label="Voice">
+              <option value="sparse" selected>Sparse</option>
+              <option value="straight">Straight</option>
+              <option value="workshop">Workshop</option>
+              <option value="proposed">Proposed</option>
+            </optgroup>
+          </select>
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 16 16"
+            width="12"
+            height="12"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m4 6 4 4 4-4" />
+          </svg>
+        </div>
+
+        <div class="variant-stage">
+          <p class="note">
+            Axis: <strong style="color: #e6edf3">Voice</strong> (how much copy,
+            how personal). Work is named only as craft: design systems, product
+            frontend, accessibility. No employer product detail. Press
+            <kbd>H</kbd> to hide the picker. Choose one; nothing is ranked.
+          </p>
+
+          <!-- SPARSE -->
+          <div class="variant-block" data-variant-panel="sparse">
+            <article class="readme">
+              <h1>Luke Brannagan</h1>
+              <p>
+                Senior frontend engineer. Design systems and product UI by day;
+                small open-source tools on the side.
+              </p>
+              <p class="badges">
+                <a
+                  class="badge li"
+                  href="https://www.linkedin.com/in/luke-brannagan"
+                  >LinkedIn</a
+                >
+                <a class="badge web" href="https://www.lukebrannagan.com"
+                  >Website</a
+                >
+              </p>
+              <hr />
+              <h2>Open source</h2>
+              <div class="pins">
+                <a class="pin" href="https://github.com/Nevnet99/phantasmal">
+                  <strong>phantasmal</strong>
+                  <span
+                    >Local-first habit tracker with a built-in journal.</span
+                  >
+                </a>
+                <a
+                  class="pin"
+                  href="https://github.com/Nevnet99/hearthstone-template"
+                >
+                  <strong>hearthstone-template</strong>
+                  <span
+                    >Shared agent skills + ops hub for working across
+                    repos.</span
+                  >
+                </a>
+              </div>
+            </article>
+            <details class="raw">
+              <summary>Raw README.md</summary>
+              <pre id="raw-sparse"></pre>
+            </details>
+          </div>
+
+          <!-- STRAIGHT -->
+          <div class="variant-block" data-variant-panel="straight" hidden>
+            <article class="readme">
+              <h1>Hi, I'm Luke</h1>
+              <p>
+                Senior frontend engineer in Manchester. Most of my commit volume
+                is design-system and product frontend work: accessible
+                components, form controls, tokens, docs, and the product pages
+                that consume them. Outside work I ship small tools and keep a
+                portfolio site current.
+              </p>
+              <p class="badges">
+                <a
+                  class="badge li"
+                  href="https://www.linkedin.com/in/luke-brannagan"
+                  >LinkedIn</a
+                >
+                <a class="badge web" href="https://www.lukebrannagan.com"
+                  >Website</a
+                >
+              </p>
+              <hr />
+              <h2>What I spend time on</h2>
+              <ul>
+                <li>
+                  <strong>Design systems</strong> — component libraries with
+                  WCAG in mind, Storybook, tokens, and form-associated web
+                  controls.
+                </li>
+                <li>
+                  <strong>Product frontend</strong> — TypeScript / React /
+                  Next.js surfaces that sit on those primitives.
+                </li>
+                <li>
+                  <strong>Tests as a habit</strong> — Vitest, Testing Library,
+                  Playwright where the surface needs it.
+                </li>
+              </ul>
+              <h2>Stack I use a lot</h2>
+              <div class="stack">
+                <span class="chip">TypeScript</span>
+                <span class="chip">React</span>
+                <span class="chip">Next.js</span>
+                <span class="chip">Vite</span>
+                <span class="chip">Storybook</span>
+                <span class="chip">Vitest</span>
+                <span class="chip">Playwright</span>
+                <span class="chip">Tailwind</span>
+                <span class="chip">Node</span>
+                <span class="chip">Go</span>
+              </div>
+              <h2>Public work</h2>
+              <div class="pins">
+                <a class="pin" href="https://github.com/Nevnet99/phantasmal">
+                  <strong>phantasmal</strong>
+                  <span
+                    >Open-source, local-first habit tracker + journal
+                    (<code>phantasmalhabit.com</code>).</span
+                  >
+                </a>
+                <a
+                  class="pin"
+                  href="https://github.com/Nevnet99/hearthstone-template"
+                >
+                  <strong>hearthstone-template</strong>
+                  <span
+                    >A repo harness: shared agent skills, steering, and an Astro
+                    ops hub.</span
+                  >
+                </a>
+                <a class="pin" href="https://github.com/Nevnet99/spawn">
+                  <strong>spawn</strong>
+                  <span
+                    >Go-based dev-environment / dotfiles provisioner.</span
+                  >
+                </a>
+              </div>
+            </article>
+            <details class="raw">
+              <summary>Raw README.md</summary>
+              <pre id="raw-straight"></pre>
+            </details>
+          </div>
+
+          <!-- WORKSHOP -->
+          <div class="variant-block" data-variant-panel="workshop" hidden>
+            <article class="readme">
+              <h1>Luke Brannagan</h1>
+              <p>
+                Senior frontend engineer. Keyboard-heavy workflow, accessibility
+                advocate, occasional chess and homelab. Day job is design
+                systems and product UI; evenings are for tools I actually want
+                to use.
+              </p>
+              <p class="badges">
+                <a
+                  class="badge li"
+                  href="https://www.linkedin.com/in/luke-brannagan"
+                  >LinkedIn</a
+                >
+                <a class="badge web" href="https://www.lukebrannagan.com"
+                  >Website</a
+                >
+              </p>
+              <hr />
+              <h2>At work (sanitized)</h2>
+              <p>
+                I build and maintain design-system primitives and the product
+                frontend that consumes them: layout, typography, form controls,
+                tokens, visual regression, and docs for HTML / React / other
+                consumers. The interesting bits stay inside the company wall;
+                the craft is the public signal.
+              </p>
+              <h2>On my own machine</h2>
+              <ul>
+                <li>
+                  <a href="https://github.com/Nevnet99/phantasmal">phantasmal</a>
+                  — local-first habit tracker with a journal
+                </li>
+                <li>
+                  <a href="https://github.com/Nevnet99/hearthstone-template"
+                    >hearthstone-template</a
+                  >
+                  — shared skills + ops hub for multi-repo agent work
+                </li>
+                <li>
+                  <a href="https://github.com/Nevnet99/spawn">spawn</a> — Go
+                  orchestrator for a self-healing dev environment
+                </li>
+                <li>
+                  <a href="https://www.lukebrannagan.com">lukebrannagan.com</a>
+                  — current portfolio
+                </li>
+              </ul>
+              <h2>Toolkit</h2>
+              <p>
+                TypeScript, React, Next.js, Vite, Storybook, Vitest, Playwright,
+                Tailwind, Node, a bit of Go when the tool wants it.
+              </p>
+            </article>
+            <details class="raw">
+              <summary>Raw README.md</summary>
+              <pre id="raw-workshop"></pre>
+            </details>
+          </div>
+
+          <!-- PROPOSED (post-resume pass — not published yet) -->
+          <div class="variant-block" data-variant-panel="proposed" hidden>
+            <article class="readme">
+              <h1>Luke Brannagan</h1>
+              <p>
+                Hey, I'm Luke. Senior Web Platform Developer in Manchester. I
+                spend most days on design systems, accessibility, and
+                performance. Outside work I mess with keyboards, play chess, run
+                a small homelab, and build tools I will actually use.
+              </p>
+              <p class="badges">
+                <a
+                  class="badge li"
+                  href="https://www.linkedin.com/in/luke-brannagan"
+                  >LinkedIn</a
+                >
+                <a class="badge web" href="https://www.lukebrannagan.com"
+                  >Website</a
+                >
+              </p>
+              <hr />
+              <h2>Projects</h2>
+              <p>
+                Mostly agentic on personal projects now. Skills and steering so
+                agents do not invent process. I still read the diff.
+              </p>
+              <ul>
+                <li>
+                  <a href="https://github.com/Nevnet99/hearthstone-template"
+                    >hearthstone-template</a
+                  >
+                  - skills, steering, Astro hub; promote is a human step
+                </li>
+                <li>
+                  <a href="https://github.com/Nevnet99/phantasmal">phantasmal</a>
+                  - local-first habit tracker
+                </li>
+                <li>
+                  <a href="https://github.com/Nevnet99/spawn">spawn</a> - Go
+                  provisioner
+                </li>
+                <li>
+                  <a href="https://www.lukebrannagan.com">lukebrannagan.com</a>
+                  - portfolio + AI and craft writing
+                </li>
+              </ul>
+            </article>
+            <details class="raw">
+              <summary>Raw README.md (full draft in proposed-from-resume.md)</summary>
+              <pre id="raw-proposed"></pre>
+            </details>
+          </div>
+
+          <div class="tradeoffs">
+            <table>
+              <thead>
+                <tr>
+                  <th>Variant</th>
+                  <th>Axis position</th>
+                  <th>Right when</th>
+                  <th>Costs</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sparse</td>
+                  <td>Lowest copy</td>
+                  <td>You want the profile to stay out of the way</td>
+                  <td>Least proof of what you actually ship</td>
+                </tr>
+                <tr>
+                  <td>Straight</td>
+                  <td>Craft + public pins</td>
+                  <td>Recruiters / peers should scan craft without employer
+                    detail</td>
+                  <td>Longer; still generic if someone wants product stories</td>
+                </tr>
+                <tr>
+                  <td>Workshop</td>
+                  <td>Most personal</td>
+                  <td>You want bio texture (keyboard, a11y, side tools)</td>
+                  <td>More opinion; easier to age as side projects change</td>
+                </tr>
+                <tr>
+                  <td>Proposed</td>
+                  <td>Workshop + Lit + agent tooling</td>
+                  <td>You want the resume-aligned draft after picking a base</td>
+                  <td>Longer; not published until you choose it</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="application/json" id="readme-sources">
+{
+  "sparse": "# Luke Brannagan\n\nSenior frontend engineer. Design systems and product UI by day; small open-source tools on the side.\n\n<p align=\"left\">\n  <a href=\"https://www.linkedin.com/in/luke-brannagan\" target=\"_blank\">\n    <img src=\"https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white\" alt=\"LinkedIn\"/>\n  </a>\n  <a href=\"https://www.lukebrannagan.com\" target=\"_blank\">\n    <img src=\"https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=About.me&logoColor=white\" alt=\"Website\"/>\n  </a>\n</p>\n\n---\n\n## Open source\n\n<a href=\"https://github.com/Nevnet99/phantasmal\">\n  <img src=\"https://github-readme-stats.vercel.app/api/pin/?username=Nevnet99&repo=phantasmal&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark\" alt=\"phantasmal\" />\n</a>\n<a href=\"https://github.com/Nevnet99/hearthstone-template\">\n  <img src=\"https://github-readme-stats.vercel.app/api/pin/?username=Nevnet99&repo=hearthstone-template&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark\" alt=\"hearthstone-template\" />\n</a>\n",
+  "straight": "# Hi, I'm Luke\n\nSenior frontend engineer in Manchester. Most of my commit volume is design-system and product frontend work: accessible components, form controls, tokens, docs, and the product pages that consume them. Outside work I ship small tools and keep a portfolio site current.\n\n<p align=\"left\">\n  <a href=\"https://www.linkedin.com/in/luke-brannagan\" target=\"_blank\">\n    <img src=\"https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white\" alt=\"LinkedIn\"/>\n  </a>\n  <a href=\"https://www.lukebrannagan.com\" target=\"_blank\">\n    <img src=\"https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=About.me&logoColor=white\" alt=\"Website\"/>\n  </a>\n</p>\n\n---\n\n## What I spend time on\n\n* **Design systems** — component libraries with WCAG in mind, Storybook, tokens, and form-associated web controls.\n* **Product frontend** — TypeScript / React / Next.js surfaces that sit on those primitives.\n* **Tests as a habit** — Vitest, Testing Library, Playwright where the surface needs it.\n\n## Stack I use a lot\n\n<img src=\"https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white\" alt=\"TypeScript\">\n<img src=\"https://img.shields.io/badge/-React-20232A?style=flat-square&logo=react&logoColor=61DAFB\" alt=\"React\">\n<img src=\"https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white\" alt=\"Next.js\">\n<img src=\"https://img.shields.io/badge/-Vite-646CFF?style=flat-square&logo=vite&logoColor=white\" alt=\"Vite\">\n<img src=\"https://img.shields.io/badge/-Storybook-FF4785?style=flat-square&logo=storybook&logoColor=white\" alt=\"Storybook\">\n<img src=\"https://img.shields.io/badge/-Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white\" alt=\"Vitest\">\n<img src=\"https://img.shields.io/badge/-Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white\" alt=\"Playwright\">\n<img src=\"https://img.shields.io/badge/-Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white\" alt=\"Tailwind CSS\">\n<img src=\"https://img.shields.io/badge/-Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white\" alt=\"Node.js\">\n<img src=\"https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white\" alt=\"Go\">\n\n## Public work\n\n<a href=\"https://github.com/Nevnet99/phantasmal\">\n  <img src=\"https://github-readme-stats.vercel.app/api/pin/?username=Nevnet99&repo=phantasmal&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark\" alt=\"phantasmal\" />\n</a>\n<a href=\"https://github.com/Nevnet99/hearthstone-template\">\n  <img src=\"https://github-readme-stats.vercel.app/api/pin/?username=Nevnet99&repo=hearthstone-template&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark\" alt=\"hearthstone-template\" />\n</a>\n<a href=\"https://github.com/Nevnet99/spawn\">\n  <img src=\"https://github-readme-stats.vercel.app/api/pin/?username=Nevnet99&repo=spawn&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark\" alt=\"spawn\" />\n</a>\n",
+  "workshop": "# Luke Brannagan\n\nSenior frontend engineer. Keyboard-heavy workflow, accessibility advocate, occasional chess and homelab. Day job is design systems and product UI; evenings are for tools I actually want to use.\n\n<p align=\"left\">\n  <a href=\"https://www.linkedin.com/in/luke-brannagan\" target=\"_blank\">\n    <img src=\"https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white\" alt=\"LinkedIn\"/>\n  </a>\n  <a href=\"https://www.lukebrannagan.com\" target=\"_blank\">\n    <img src=\"https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=About.me&logoColor=white\" alt=\"Website\"/>\n  </a>\n</p>\n\n---\n\n## At work (sanitized)\n\nI build and maintain design-system primitives and the product frontend that consumes them: layout, typography, form controls, tokens, visual regression, and docs for HTML / React / other consumers. The interesting bits stay inside the company wall; the craft is the public signal.\n\n## On my own machine\n\n* [phantasmal](https://github.com/Nevnet99/phantasmal) — local-first habit tracker with a journal\n* [hearthstone-template](https://github.com/Nevnet99/hearthstone-template) — shared skills + ops hub for multi-repo agent work\n* [spawn](https://github.com/Nevnet99/spawn) — Go orchestrator for a self-healing dev environment\n* [lukebrannagan.com](https://www.lukebrannagan.com) — current portfolio\n\n## Toolkit\n\nTypeScript, React, Next.js, Vite, Storybook, Vitest, Playwright, Tailwind, Node, a bit of Go when the tool wants it.\n",
+  "proposed": "# Luke Brannagan\n\nHey, I'm Luke. Senior Web Platform Developer in Manchester. I spend most days on design systems, accessibility, and performance. Outside work I mess with keyboards, play chess, run a small homelab, and build tools I will actually use.\n\n<p align=\"left\">\n  <a href=\"https://www.linkedin.com/in/luke-brannagan\" target=\"_blank\">\n    <img src=\"https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white\" alt=\"LinkedIn\"/>\n  </a>\n  <a href=\"https://www.lukebrannagan.com\" target=\"_blank\">\n    <img src=\"https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=About.me&logoColor=white\" alt=\"Website\"/>\n  </a>\n</p>\n\n## Projects\n\nOn personal projects I am mostly agentic now. Cursor and Kiro, multiple agents, skills and steering docs so they do not invent process every session. I still read the diff. If I do not understand a change, I dig until I can stand behind it. Steering without review is just vibe coding with extra steps.\n\n* [**hearthstone-template**](https://github.com/Nevnet99/hearthstone-template) - shared skills, steering, and an Astro ops hub for multi-repo work. Agents get structure. Promote stays a human step.\n* [**phantasmal**](https://github.com/Nevnet99/phantasmal) - local-first habit tracker with a journal ([phantasmalhabit.com](https://phantasmalhabit.com/)). Files on disk. No account wall.\n* [**spawn**](https://github.com/Nevnet99/spawn) - Go tool that provisions a self-healing dev environment\n* [**lukebrannagan.com**](https://www.lukebrannagan.com) - Astro + Nx site, Lit design system, writing. Includes the AI and craft series where I argue with myself about agents in the repo.\n\n## Toolkit\n\nTypeScript, React, Next.js, Vite, Lit, Storybook, Vitest, Playwright, Tailwind, Sanity, Node. Go when the tool wants it.\n\n<p>\n  <img src=\"https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white\" alt=\"TypeScript\">\n  <img src=\"https://img.shields.io/badge/-React-20232A?style=flat-square&logo=react&logoColor=61DAFB\" alt=\"React\">\n  <img src=\"https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white\" alt=\"Next.js\">\n  <img src=\"https://img.shields.io/badge/-Vite-646CFF?style=flat-square&logo=vite&logoColor=white\" alt=\"Vite\">\n  <img src=\"https://img.shields.io/badge/-Lit-324FFF?style=flat-square&logo=lit&logoColor=white\" alt=\"Lit\">\n  <img src=\"https://img.shields.io/badge/-Storybook-FF4785?style=flat-square&logo=storybook&logoColor=white\" alt=\"Storybook\">\n  <img src=\"https://img.shields.io/badge/-Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white\" alt=\"Vitest\">\n  <img src=\"https://img.shields.io/badge/-Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white\" alt=\"Playwright\">\n  <img src=\"https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white\" alt=\"Go\">\n</p>\n\n## Public pins\n\n<a href=\"https://github.com/Nevnet99/hearthstone-template\">\n  <img src=\"https://github-readme-stats.vercel.app/api/pin/?username=Nevnet99&repo=hearthstone-template&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark\" alt=\"hearthstone-template\" />\n</a>\n<a href=\"https://github.com/Nevnet99/phantasmal\">\n  <img src=\"https://github-readme-stats.vercel.app/api/pin/?username=Nevnet99&repo=phantasmal&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark\" alt=\"phantasmal\" />\n</a>\n\n<p>\n  <a href=\"https://github.com/Nevnet99\">\n    <img align=\"center\" width=\"400\" src=\"https://github-readme-stats.vercel.app/api?username=Nevnet99&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark\" alt=\"GitHub Stats\" />\n  </a>\n  <a href=\"https://github.com/Nevnet99\">\n    <img align=\"center\" width=\"320\" src=\"https://github-readme-stats.vercel.app/api/top-langs/?username=Nevnet99&hide=html,css&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&langs_count=5&layout=compact&theme=dark\" alt=\"Top Languages\" />\n  </a>\n</p>\n"
+}
+    </script>
+    <script>
+      const sources = JSON.parse(
+        document.getElementById("readme-sources").textContent,
+      );
+      for (const [id, md] of Object.entries(sources)) {
+        const el = document.getElementById(`raw-${id}`);
+        if (el) el.textContent = md;
+      }
+
+      const params = new URLSearchParams(location.search);
+      let active = params.get("__variant") || "sparse";
+      if (!sources[active]) active = "sparse";
+
+      const buttons = [
+        ...document.querySelectorAll(".variant-picker [data-variant]"),
+      ];
+      const select = document.querySelector(".variant-picker-select select");
+      const panels = [
+        ...document.querySelectorAll("[data-variant-panel]"),
+      ];
+      const picker = document.querySelector(".variant-picker");
+      const pickerSelect = document.querySelector(".variant-picker-select");
+
+      function setVariant(id) {
+        active = id;
+        const url = new URL(location.href);
+        url.searchParams.set("__variant", id);
+        history.replaceState(null, "", url);
+        buttons.forEach((b) =>
+          b.setAttribute("aria-pressed", String(b.dataset.variant === id)),
+        );
+        if (select) select.value = id;
+        panels.forEach((p) => {
+          p.hidden = p.dataset.variantPanel !== id;
+        });
+        const pressed = buttons.find((b) => b.dataset.variant === id);
+        pressed?.scrollIntoView({ block: "nearest" });
+      }
+
+      buttons.forEach((b) =>
+        b.addEventListener("click", () => setVariant(b.dataset.variant)),
+      );
+      select?.addEventListener("change", () => setVariant(select.value));
+
+      const order = buttons.map((b) => b.dataset.variant);
+      window.addEventListener("keydown", (e) => {
+        if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.altKey) return;
+        const t = e.target;
+        if (
+          t instanceof HTMLElement &&
+          (t.closest("input, textarea, select, [contenteditable=true]"))
+        )
+          return;
+        if (e.key === "h" || e.key === "H") {
+          const hide = picker?.style.display !== "none";
+          if (picker) picker.style.display = hide ? "none" : "";
+          if (pickerSelect) pickerSelect.style.display = hide ? "none" : "";
+          return;
+        }
+        if (e.key !== "ArrowDown" && e.key !== "ArrowUp" && e.key !== "ArrowRight" && e.key !== "ArrowLeft")
+          return;
+        e.preventDefault();
+        const i = order.indexOf(active);
+        const next =
+          e.key === "ArrowDown" || e.key === "ArrowRight"
+            ? order[(i + 1) % order.length]
+            : order[(i - 1 + order.length) % order.length];
+        setVariant(next);
+      });
+
+      setVariant(active);
+    </script>
+  </body>
+</html>
