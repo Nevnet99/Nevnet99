@@ -35,11 +35,11 @@ Senior frontend engineer in Manchester. Most of my commit volume is design-syste
 ## Public work
 
 <a href="https://github.com/Nevnet99/phantasmal">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nevnet99&repo=phantasmal&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark" alt="phantasmal" />
+  <img src="https://github-stats-extended.vercel.app/api/pin/?username=Nevnet99&repo=phantasmal&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark" alt="phantasmal" />
 </a>
 <a href="https://github.com/Nevnet99/hearthstone-template">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nevnet99&repo=hearthstone-template&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark" alt="hearthstone-template" />
+  <img src="https://github-stats-extended.vercel.app/api/pin/?username=Nevnet99&repo=hearthstone-template&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark" alt="hearthstone-template" />
 </a>
 <a href="https://github.com/Nevnet99/spawn">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nevnet99&repo=spawn&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark" alt="spawn" />
+  <img src="https://github-stats-extended.vercel.app/api/pin/?username=Nevnet99&repo=spawn&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark" alt="spawn" />
 </a>

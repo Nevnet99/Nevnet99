@@ -39,17 +39,17 @@ TypeScript, React, Next.js, Vite, Lit, Storybook, Vitest, Playwright, Tailwind, 
 ## Public pins
 
 <a href="https://github.com/Nevnet99/hearthstone-template">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nevnet99&repo=hearthstone-template&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark" alt="hearthstone-template" />
+  <img src="https://github-stats-extended.vercel.app/api/pin/?username=Nevnet99&repo=hearthstone-template&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark" alt="hearthstone-template" />
 </a>
 <a href="https://github.com/Nevnet99/phantasmal">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nevnet99&repo=phantasmal&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark" alt="phantasmal" />
+  <img src="https://github-stats-extended.vercel.app/api/pin/?username=Nevnet99&repo=phantasmal&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark" alt="phantasmal" />
 </a>
 
 <p>
   <a href="https://github.com/Nevnet99">
-    <img align="center" width="400" src="https://github-readme-stats.vercel.app/api?username=Nevnet99&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark" alt="GitHub Stats" />
+    <img align="center" width="400" src="https://github-stats-extended.vercel.app/api?username=Nevnet99&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&theme=dark" alt="GitHub Stats" />
   </a>
   <a href="https://github.com/Nevnet99">
-    <img align="center" width="320" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nevnet99&hide=html,css&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&langs_count=5&layout=compact&theme=dark" alt="Top Languages" />
+    <img align="center" width="320" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Nevnet99&hide=html,css&title_color=ffffff&text_color=c9cacc&icon_color=06B6D4&bg_color=1d1f21&langs_count=5&layout=compact&theme=dark" alt="Top Languages" />
   </a>
 </p>
