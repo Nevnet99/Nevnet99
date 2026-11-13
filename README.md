@@ -18,7 +18,7 @@ On personal projects I am mostly agentic now. Cursor and Kiro, multiple agents, 
 * [**hearthstone-template**](https://github.com/Nevnet99/hearthstone-template) - shared skills, steering, and an Astro ops hub for multi-repo work. Agents get structure. Promote stays a human step.
 * [**phantasmal**](https://github.com/Nevnet99/phantasmal) - local-first habit tracker with a journal ([phantasmalhabit.com](https://phantasmalhabit.com/)). Files on disk. No account wall.
 * [**spawn**](https://github.com/Nevnet99/spawn) - Go tool that provisions a self-healing dev environment
-* [**lukebrannagan.com**](https://www.lukebrannagan.com) - Astro + Nx site, Lit design system, writing. Includes the AI and craft series where I argue with myself about agents in the repo.
+* [**lukebrannagan.com**](https://www.lukebrannagan.com) - Astro + Nx site, Lit design system, writing.
 
 ## Toolkit
 
